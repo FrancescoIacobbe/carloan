@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import extfx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="compilaContrattoBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.managerCompetizione.NuovaCompetizioneController">
+   <top>
+      <Label fx:id="compilaContrattoTitolo" text="Compila contratto" BorderPane.alignment="BOTTOM_LEFT">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets left="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane fx:id="pannelloCentraleAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="640.0">
+         <children>
+            <GridPane fx:id="datiGridPane" layoutX="6.0" layoutY="15.0" prefHeight="297.0" prefWidth="624.0">
+               <children>
+                  <Label fx:id="IDLabel" text="ID">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataInizioLabel" text="Data inizio" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataLimiteLabel" text="Data Limite" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="oraCompetizioneErrore" styleClass="errorMessage" text="Formato ora valido hh:mm" textFill="RED" visible="false" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="10.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="durataCompetizioneErrore" layoutX="440.0" layoutY="146.0" styleClass="errorMessage" text="Sono accettati solo numeri interi per la durata" textFill="RED" visible="false" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="10.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="euro" text="€" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="dataRestituzioneLabel" text="Data Restituzione" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IDTextField" GridPane.columnIndex="1" />
+                  <DatePicker fx:id="dataInizioDatePicker" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="prezzoErrore" styleClass="errorMessage" text="Accettati solo valori decimali" textFill="RED" visible="false" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="10.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="nomeErrore" styleClass="errorMessage" text="Il nome deve avere una lunghezza compresa tra 1 e 255 caratteri" textFill="RED" visible="false" wrapText="true" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Verdana" size="10.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <DatePicker fx:id="dataLimiteDatePicker" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="dataRestituzioneDatePicker" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="luogoRestituzioneLabel" text="Luogo Restituzione" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="tipoNoleggioLabel" text="Tipo Noleggio" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="macchinaLabel" text="Macchina" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="costoKmLabel" text=" Costo al km" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="kmEffettiviLabel" text=" Km effettivi" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="prezzoExtraLabel" text=" Prezzo extra" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="accontoLabel" text=" Acconto" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="luogoRestituzioneTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="macchinaTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="costoKmTextField" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Label fx:id="euro1" text="€" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="kmEffettiviTextField" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <TextField fx:id="prezzoExtraTextField" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <TextField fx:id="accontoTextField" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Label fx:id="euro11" text="€" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="euro12" text="€" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tipoKmLabel" text=" Tipo kilometraggio" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tariffaBaseLabel" text=" Tariffa base" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tipoFasciaLabel" text=" Tipo fascia" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tariffaBaeTextField" GridPane.columnIndex="3" />
+                  <Button fx:id="ricercaMacchinaButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Ricerca Macchina" GridPane.rowIndex="7" />
+                  <Label fx:id="costoTotLabel" text="Costo totale" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="costoTotTextField" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <Label fx:id="euro121" text="€" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="tipoNoleggioComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="tipoFasciaComboBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="tipoKmComboBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="144.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="116.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="144.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="110.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Group fx:id="gruppoPartecipantiGroup" translateY="120.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <GridPane fx:id="bottoniGridPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="640.0" BorderPane.alignment="BOTTOM_RIGHT">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="confermaButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Conferma" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="annullaButton" layoutX="10.0" layoutY="11.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Annulla" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="indietroButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Indietro">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </bottom>
+</BorderPane>

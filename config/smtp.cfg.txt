@@ -1,0 +1,4 @@
+usernameSMTP = agroludos@gmail.com
+passwordSMTP = agroIngMaster
+hostSMTP = smtp.gmail.com
+portSMTP = 465

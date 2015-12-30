@@ -1,0 +1,4 @@
+hostDB = localhost
+dataBaseDB = Carloan
+usernameDB = root
+passwordDB = 1234

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actions>
+	<action value="registraCliente">
+		<class>business.GestioneCliente</class>
+		<method>registraCliente</method>
+	</action>
+	<action value="modificaCredenzialiCliente">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaCredenzialiDipendente">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaDatiiCliente">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaDatiiDipendente">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="registraDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>registraDipendente</method>
+	</action>
+	<action value="registraMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>registraMacchina</method>
+	</action>
+	<action value="ricercaCliente">
+		<class>business.GestioneCliente</class>
+		<method>ricercaCliente</method>
+	</action>
+	<action value="registraRequisito">
+		<class>business.GestioneRequisito</class>
+		<method>registraRequisito</method>
+	</action>
+	<action value="ricercaMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>ricercaMacchina</method>
+	</action>
+	<action value="ricercaRequisito">
+		<class>business.GestioneRequisito</class>
+		<method>ricercaRequisito</method>
+	</action>
+	<action value="ricercaDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>ricercaDipendente</method>
+	</action>
+	<action value="ricercaContratto">
+		<class>business.GestioneContratto</class>
+		<method>ricercaContratto</method>
+	</action>
+	<action value="eliminaMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>eliminaMacchina</method>
+	</action>
+	<action value="login">
+		<class>business.GestioneAccesso</class>
+		<method>login</method>
+	</action>
+	<action value="avvio">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="caricaInterfaccia">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	
+	<action value="usernameDisponibile">
+		<class>business.GestioneAccesso</class>
+		<method>isAvailableUsername</method>
+	</action>
+
+	<action value="emailDisponibile">
+		<class>business.GestioneAccesso</class>
+		<method>isAvailableEmail</method>
+	</action>
+	<action value="logout">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	
+	
+	<action value="visualizzaMessaggio">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="aggiornaPane">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	
+	<action value="riepilogoContrattoClie">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoContrattoDip">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoContrattoMng">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoMacchinaDip">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoContrattoMng">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoDipendenteMng">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoRequisito">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="riepilogoClienteDip">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="salvaPdf">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	
+	
+	<action value="modificaContratto">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaMacchina">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaRequisito">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaDatiClienteDip">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="modificaCredenzialiClienteDip">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	
+	<action value="homeCliente">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="homeDipendente">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="homeManagerSistema">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="mostraStorico">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="mostraTuttiContratti">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="mostraTuttiRequisiti">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="mostraTuttvalueipendenti">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="mostraTutteMacchine">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="mostraTuttiClienti">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	
+	<action value="compilaContratto">
+		<class>business.GestioneContratto</class>
+		<method>compilaContratto</method>
+	</action>
+
+	<action value="inputDialog">
+		<class>null</class>
+		<method>null</method>
+	</action>
+	<action value="getUsernameCliente">
+		<class>business.GestioneCliente</class>
+		<method>getUsername</method>
+	</action>
+	<action value="getUsernameDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>getUsername</method>
+	</action>
+	<action value="getUsernameMng">
+		<class>business.GestioneManagerSistema</class>
+		<method>getUsername</method>
+	</action>
+
+</actions>

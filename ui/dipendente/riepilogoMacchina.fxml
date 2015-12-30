@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import extfx.scene.control.*?>
+<?import com.panemu.tiwulfx.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="riepilogoMacchinaBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.partecipante.RiepilogoIscrizioneController">
+   <center>
+      <AnchorPane fx:id="pannelloCentraleAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="640.0">
+         <children>
+            <GridPane fx:id="pannelloDatiGridPane" layoutX="9.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="621.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="targaLabel" text="Targa">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="targa" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="modelloLabel" text="Modello" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="modello" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="disponibilitàLabel" text="Disponibilità" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="disponibilita" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fasciaLabel" prefHeight="18.0" prefWidth="145.0" text="Fascia" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="manuntenzioneLabel" text="Manuntenzione" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ultimoKmLabel" text="Ultimo km" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="manuntenzione" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="ultimokm" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="fascia" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="121.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="181.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <GridPane fx:id="titoloGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0" minWidth="10.0" prefWidth="541.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="titoloIRiepilogoMacchina" text="Riepilogo Macchina" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </BorderPane.margin>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane fx:id="bottoniGridPane" alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="indietroButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Indietro">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="346.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="menuGeneraleVBox" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.menu.MenuGeneraleController">
+  <children>
+      <MenuBar fx:id="menuMenuBar" maxHeight="30.0" minHeight="30.0" prefHeight="30.0">
+         <menus>
+            <Menu fx:id="menuMenu" mnemonicParsing="false" text="Menù">
+               <items>
+                  <MenuItem fx:id="esciMenuItem" mnemonicParsing="false" onAction="#esci" text="Esci" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+	</children>
+</VBox>

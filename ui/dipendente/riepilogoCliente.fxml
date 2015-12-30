@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import extfx.scene.control.*?>
+<?import com.panemu.tiwulfx.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="riepiloClienteBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.partecipante.RiepilogoIscrizioneController">
+   <center>
+      <AnchorPane fx:id="pannelloCentraleAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="640.0">
+         <children>
+            <GridPane fx:id="pannelloDatiGridPane" layoutX="15.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="615.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="cognomeLabel" text="Cognome">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cognome" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numTelLabel" text="Numero telefono" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nome" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usernameLabel" text="Username" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="password" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomeLabel" text="Nome" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CF" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordLabel" text="Password" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cittaLabel" prefHeight="18.0" prefWidth="145.0" text="Città" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CFLabel" text="Codice Fiscale" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataNascitaLabel" text="Data di Nascita" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="indirizzoLabel" text="Indirizzo" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CAPLabel" text="CAP" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataNascita" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="indirizzo" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="citta" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="CAP" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="numTelefono" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="username" GridPane.columnIndex="3" />
+                  <Label fx:id="emailLabel" text="Email" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="143.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="159.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="163.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <GridPane fx:id="titoloGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0" minWidth="10.0" prefWidth="541.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="titoloIRiepilogoCliente" text="Riepilogo Cliente" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </BorderPane.margin>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane fx:id="bottoniGridPane" alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="salvaPdfButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="181.0" text="Modifica Anagrafica" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="pdfImageView" fitHeight="13.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button fx:id="stampaButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="173.0" text="Modifica Credenziali" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="indietroButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Indietro" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="278.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="183.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="179.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="23.0" minHeight="7.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </bottom>
+</BorderPane>

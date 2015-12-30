@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<calls>
+	<call id="registraCliente">
+		<class>business.GestioneCliente</class>
+		<method>registraCliente</method>
+	</call>
+	<call id="registraDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>registraDipendente</method>
+	</call>
+	<call id="registraMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>registraMacchina</method>
+	</call>
+	<call id="ricercaCliente">
+		<class>business.GestioneCliente</class>
+		<method>ricercaCliente</method>
+	</call>
+	<call id="registraRequisito">
+		<class>business.GestioneRequisito</class>
+		<method>registraRequisito</method>
+	</call>
+	<call id="ricercaMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>ricercaMacchina</method>
+	</call>
+	<call id="ricercaRequisito">
+		<class>business.GestioneRequisito</class>
+		<method>ricercaRequisito</method>
+	</call>
+	<call id="ricercaDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>ricercaDipendente</method>
+	</call>
+	<call id="ricercaContratto">
+		<class>business.GestioneContratto</class>
+		<method>ricercaContratto</method>
+	</call>
+	<call id="eliminaMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>eliminaMacchina</method>
+	</call>
+	<call id="login">
+		<class>business.GestioneAccesso</class>
+		<method>login</method>
+	</call>
+	<call id="avvio">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="caricaInterfaccia">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	
+	<call id="usernameDisponibile">
+		<class>business.GestioneAccesso</class>
+		<method>isAvailableUsername</method>
+	</call>
+
+	<call id="emailDisponibile">
+		<class>business.GestioneAccesso</class>
+		<method>isAvailableEmail</method>
+	</call>
+	<call id="logout">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	
+	
+	<call id="visualizzaMessaggio">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="aggiornaPane">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	
+	<call id="riepilogoContrattoClie">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoContrattoDip">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoContrattoMng">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoMacchinaDip">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoContrattoMng">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoDipendenteMng">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoRequisito">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="riepilogoClienteDip">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="salvaPdf">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	
+	
+	<call id="modificaDatiUtente">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	
+	<call id="modificaContratto">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="modificaMacchina">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="modificaRequisito">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	
+	<call id="homeCliente">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="homeDipendente">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="homeManagerSistema">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="mostraStorico">
+		<class>business.GestioneCliente</class>
+		<method>getContrattoCliente</method>
+	</call>
+	<call id="mostraTuttiContratti">
+		<class>business.GestioneContratto</class>
+		<method>getContrattoSistema</method>
+	</call>
+	<call id="mostraTuttiRequisiti">
+		<class>business.GestioneRequisito</class>
+		<method>getRequisitoSistema</method>
+	</call>
+	<call id="mostraTuttidipendenti">
+		<class>business.GestioneDipendente</class>
+		<method>getDipendenteSistema</method>
+	</call>
+	<call id="mostraTutteMacchine">
+		<class>business.GestioneMacchina</class>
+		<method>getMacchinaSistema</method>
+	</call>
+	<call id="mostraTuttiClienti">
+		<class>business.GestioneCliente</class>
+		<method>getClientiSistema</method>
+	</call>
+	
+	<call id="compilaContratto">
+		<class>business.GestioneContratto</class>
+		<method>compilaContratto</method>
+	</call>
+	
+	<call id="mostraAreaPersonaleCliente">
+		<class>business.GestioneCliente</class>
+		<method>getAnagraficaCliente</method>
+	</call>
+	<call id="mostraAreaPersonaleDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>getDipendente</method>
+	</call>
+	<call id="inputDialog">
+		<class>null</class>
+		<method>null</method>
+	</call>
+	<call id="getUsernameCliente">
+		<class>business.GestioneCliente</class>
+		<method>getUsername</method>
+	</call>
+	<call id="getUsernameDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>getUsername</method>
+	</call>
+	<call id="getUsernameMng">
+		<class>business.GestioneManagerSistema</class>
+		<method>getUsername</method>
+	</call>
+	<call id="setAccountCliente">
+		<class>business.GestioneCliente</class>
+		<method>setAccount</method>
+	</call>
+	<call id="setMacchinaAllocata">
+		<class>business.GestioneContratto</class>
+		<method>setMacchinaAllocata</method>
+	</call>
+	<call id="setDatiContratto">
+		<class>business.GestioneContratto</class>
+		<method>setDatiContratto</method>
+	</call>
+	<call id="setTariffaBaseAllocato">
+		<class>business.GestioneContratto</class>
+		<method>setTariffaBaseAllocato</method>
+	</call>
+	<call id="setPrezzoExtraAllocato">
+		<class>business.GestioneContratto</class>
+		<method>setPrezzoExtraAllocato</method>
+	</call>
+	<call id="setCostoTotAllocato">
+		<class>business.GestioneContratto</class>
+		<method>setCostoTotAllocato</method>
+	</call>
+	<call id="setAccountDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>setAccountDipendente</method>
+	</call>
+	<call id="setDipendente">
+		<class>business.GestioneDipendente</class>
+		<method>setDipendente</method>
+	</call>
+	<call id="setAccountManager">
+		<class>business.GestioneManagerSistema</class>
+		<method>setAccountManager</method>
+	</call>
+	<call id="setDatiRequisito">
+		<class>business.GestioneRequisito</class>
+		<method>setDatiRequisito</method>
+	</call>
+	<call id="setDatiMacchina">
+		<class>business.GestioneMacchina</class>
+		<method>setDatiMacchina</method>
+	</call>
+</calls>
+
+
+

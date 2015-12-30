@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="archorpanemenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <GridPane fx:id="gridPaneBenvenuto" layoutX="14.0" layoutY="7.0" prefHeight="44.0" prefWidth="572.0">
+      <children>
+        <GridPane prefHeight="44.0" prefWidth="249.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Label fx:id="benvenutotitolo" layoutX="24.0" layoutY="14.0" prefHeight="31.0" prefWidth="126.0" text="Benvenuto">
+      <font>
+        <Font name="Verdana Bold" size="18.0" />
+      </font>
+    </Label>
+    <TabPane fx:id="menuTab" layoutX="14.0" layoutY="78.0" prefHeight="271.0" prefWidth="571.9999000000025" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="anagraficaTab" text="Anagrafica">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="233.0" prefWidth="572.0">
+              <children>
+                <GridPane fx:id="anagraficaGridPane" layoutX="4.0" layoutY="14.0" prefHeight="216.0" prefWidth="210.0">
+                  <children>
+                    <Label fx:id="nomeLabel" text="Nome" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Label fx:id="cognomeLabel" text="Cognome" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                              <Label fx:id="CFLabel" text="Codice Fiscale" GridPane.rowIndex="2" />
+                              <Label fx:id="dataNascitaLabel" text="Data di Nascita" GridPane.rowIndex="3" />
+                              <Label fx:id="indirizzoLabel" text="Indirizzo" GridPane.rowIndex="4" />
+                              <Label fx:id="cittaLabel" text="Città" GridPane.rowIndex="5" />
+                              <Label fx:id="capLabel" text="CAP" GridPane.rowIndex="6" />
+                              <Label fx:id="numTelLabel" prefHeight="22.0" prefWidth="117.0" text="Numero di telefono" GridPane.rowIndex="7" />
+                              <Label fx:id="nome" GridPane.columnIndex="1" />
+                              <Label fx:id="cognome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="CF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="dataNascita" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label fx:id="indirzzo" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="citta" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label fx:id="CAP" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label fx:id="numTel" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="121.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="79.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints maxHeight="31.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+                        <GridPane fx:id="credenzialiGridPane" layoutX="258.0" layoutY="14.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="usernameLabel" text="Username" />
+                              <Label fx:id="passwordLabel" text="Password" GridPane.rowIndex="1" />
+                              <Label fx:id="username" GridPane.columnIndex="1" />
+                              <Label fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="emailLabel" text="Email" GridPane.rowIndex="2" />
+                              <Label fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="modAnagraficaButton" layoutX="251.0" layoutY="194.0" mnemonicParsing="false" text="Modifica Anagrafica" />
+                        <Button fx:id="modCredenzialiButton" layoutX="423.0" layoutY="194.0" mnemonicParsing="false" text="Modifica Credenziali" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Contratti">
+          <content>
+            <AnchorPane id="Content" fx:id="contrattiTab" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="ricercaContrattoGridPane" layoutX="292.0" layoutY="7.0" prefHeight="81.0" prefWidth="266.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="93.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="107.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                        <Button fx:id="ricercaContrattoButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Ricerca contratto" />
+                              <TextField fx:id="ricercaContrattoTextField" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <StackPane layoutX="14.0" layoutY="52.0" />
+                        <TableView fx:id="contrattiTableView" layoutX="24.0" layoutY="52.0" prefHeight="147.0" prefWidth="521.0">
+                          <columns>
+                            <TableColumn fx:id="IDColTable" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="dataColTable" prefWidth="75.0" text="Data" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="compilaContratto" layoutX="431.0" layoutY="199.0" mnemonicParsing="false" text="Compila contratto" />
+                     </children></AnchorPane>
+          </content>
+        </Tab>
+            <Tab fx:id="macchineTab" text="Macchine">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="ricercaMacchinaGridPane" layoutX="299.0" layoutY="7.0" prefHeight="81.0" prefWidth="266.0">
+                           <children>
+                              <Button fx:id="ricercaMacchinaButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Ricerca macchina" />
+                              <TextField fx:id="ricercaMacchinaTextField" GridPane.columnIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="93.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="107.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TableView fx:id="macchineTableView" layoutX="26.0" layoutY="54.0" prefHeight="147.0" prefWidth="521.0">
+                           <columns>
+                              <TableColumn fx:id="targaColTable" prefWidth="75.0" text="Targa" />
+                              <TableColumn fx:id="modelloColTable" prefWidth="75.0" text="Modello" />
+                              <TableColumn fx:id="dsponibilitaColTable" prefWidth="86.0" text="Disponibilità" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="mostraButton" layoutX="475.0" layoutY="203.0" mnemonicParsing="false" text="Mostra" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="clientiTable" text="Clienti">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="ricercaClientiGridPane" layoutX="300.0" layoutY="8.0" prefHeight="81.0" prefWidth="266.0">
+                           <children>
+                              <Button fx:id="ricercaClienteButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Ricerca cliente" />
+                              <TextField fx:id="ricercaClienteTextField" GridPane.columnIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="93.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="107.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TableView fx:id="clientiTableView" layoutX="26.0" layoutY="59.0" prefHeight="147.0" prefWidth="521.0">
+                           <columns>
+                              <TableColumn fx:id="CFColTable" prefWidth="89.0" text="Codice Fiscale" />
+                              <TableColumn fx:id="cognomeColTable" prefWidth="74.0" text="Cognome" />
+                              <TableColumn fx:id="nomeColTable" prefWidth="83.0" text="Nome" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="registraCliente" layoutX="450.0" layoutY="206.0" mnemonicParsing="false" text="Registra cliente" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<interfaces>
+	<interface id="benvenuto" src ="/ui/benvenuto.fxml">
+	</interface>
+	<interface id="homeCliente" src="/ui/cliente/home.fxml">
+	</interface>	
+	<interface id="modificaDatiCliente" src="/ui/cliente/modificaAnagrafica.fxml">
+	</interface>
+	<interface id="modificaCredenzialiCliente" src="/ui/cliente/modificaCredenziali.fxml">
+	</interface>
+	<interface id="riepilogoContratto" src="/ui/cliente/riepilogoContratto.fxml">
+	</interface>
+	<interface id="homeDipendente" src="/ui/dipendente/homeDipendente.fxml">
+	</interface>
+	<interface id="modificaDatiClienteDip" src="/ui/dipendente/modificaAnagrafica.fxml">
+	</interface>
+	<interface id="modificaDatiDipendente" src="/ui/dipendente/modificaAnagraficaDip.fxml">
+	</interface>
+	<interface id="modificaCredenzialiClienteDip" src="/ui/dipendente/modificaCredenziali.fxml">
+	</interface>
+	<interface id="modificaCredenzialiDipendente" src="/ui/dipendente/modificaCredenzialiDip.fxml">
+	</interface>
+	<interface id="modificaContratto" src="/ui/dipendente/modificaContratto.fxml">
+	</interface>
+	<interface id="nuovoContratto" src="/ui/dipendente/nuovoContratto.fxml">
+	</interface>
+	<interface id="registraCliente" src="/ui/dipendente/registraCliente.fxml">
+	</interface>
+	<interface id="ricercaMacchina" src="/ui/dipendente/ricercaMacchina.fxml">
+	</interface>
+	<interface id="riepilogoClienteDip" src="/ui/dipendente/riepilogoCliente.fxml">
+	</interface>
+	<interface id="riepilogoContrattoDip" src="/ui/dipendente/riepilogoContratto.fxml">
+	</interface>
+	<interface id="riepilogoMacchinaDip" src="/ui/dipendente/riepilogoMacchina.fxml">
+	</interface>
+	<interface id="homeManagerSistema" src="/ui/managerSistema/homeManagerSistema.fxml">
+	</interface>
+	<interface id="modificaDatiDipendenteMng" src="/ui/managerSistema/modificaAnagraficaDipendente.fxml">
+	</interface>
+	<interface id="modificaContrattoMng" src="/ui/managerSistema/modificaContratto.fxml">
+	</interface>
+	<interface id="modificaCredenzialiDipendenteMng" src="/ui/managerSistema/modificaCredenzialiDipendente.fxml">
+	</interface>
+	<interface id="modificaMacchina" src="/ui/managerSistema/modificaMacchina.fxml">
+	</interface>
+	<interface id="modificaRequisito" src="/ui/managerSistema/modificaRequisito.fxml">
+	</interface>
+	<interface id="registraDipendente" src="/ui/managerSistema/registraDipendente.fxml">
+	</interface>
+	<interface id="RicercaRequisito" src="/ui/managerSistema/ricercaRequisito.fxml">
+	</interface>
+	<interface id="riepilogoClienteMng" src="/ui/managerSistema/riepilogoCliente.fxml">
+	</interface>
+	<interface id="riepilogoContrattoMng" src="/ui/managerSistema/riepilogoContratto.fxml">
+	</interface>
+	<interface id="riepilogoMacchinaMng" src="/ui/managerSistema/riepilogoMacchina.fxml">
+	</interface>
+	<interface id="riepilogoRequisitoMng" src="/ui/managerSistema/riepilogoRequisito.fxml">
+	</interface>
+	
+</interfaces>

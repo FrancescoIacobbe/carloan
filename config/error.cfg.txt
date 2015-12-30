@@ -1,0 +1,10 @@
+gestioneErrori.exception.DAOException = Si è verificato un problema durante il reperimento dei dati.\nContattare l'amministratore del sistema.
+gestioneErrori.exception.GestionePropertiesException = Si è verificato un errore durante il caricamento di un file di configurazione.\nContattare l'amministratore del sistema.
+gestioneErrori.exception.FileException = Impossibile accedere al file selezionato.\nRiprovare
+gestioneErrori.exception.ApplicationControllerException = Si è verificato un errore durante l'esecuzione di un servizio.\nContattare l'amministratore del sistema.
+gestioneErrori.exception.ViewDispatcherException = Si è verificato un errore grafico.\nContattare l'amministratore del sistema.
+gestioneErrori.exception.StampaException = Impossibile eseguire l'operazione di stampa.\nAssicurarsi di avere un gestore associato al file che si desidera stampare.\nAssicurarsi di avere i permessi necessari dal sistema operativo per eseguire questa funzione.\nSe il problema persiste, contattare l'amministratore del sistema.
+gestioneErrori.exception.GestioneDateException = Si è verificato un errore interno.\nContattare l'amministratore del sistema.
+gestioneErrori.exception.ReaderXMLException = Si è verificato un errore interno.\nContattare l'amministratore del sistema.
+gestioneErrori.exception.EmailException = Si è verificato un errore durante l'invio di una o più email.\nSe l'errore persiste, contattare l'amministratore del sistema.
+gestioneErrori.exception.PdfException = Si è verificato un errore nella generazione di un report pdf.\nContattare l'amministratore del sistema.

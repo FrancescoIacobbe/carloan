@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import extfx.scene.control.*?>
+<?import com.panemu.tiwulfx.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="riepilogoRequisitoBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.partecipante.RiepilogoIscrizioneController">
+   <center>
+      <AnchorPane fx:id="pannelloCentraleAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="640.0">
+         <children>
+            <GridPane fx:id="pannelloDatiGridPane" layoutX="10.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="620.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="IDlLabel" text="ID">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="competizione" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataCompetizione" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="data" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descrizioneLabel" text="Descrizione" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ora" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="modelliLabel" text="Modelli" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ID" GridPane.columnIndex="1" />
+                  <Label fx:id="descrizione" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="modelli" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="143.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="159.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="144.0" minHeight="10.0" prefHeight="144.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="144.0" minHeight="0.0" prefHeight="144.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <GridPane fx:id="titoloGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0" minWidth="10.0" prefWidth="541.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="titoloIRiepilogoCompetizione" text="Riepilogo Requisito" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </BorderPane.margin>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane fx:id="bottoniGridPane" alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="modificaRequisitoButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="173.0" text="Modifica Requisito" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="indietroButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Indietro" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="278.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="183.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="179.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="23.0" minHeight="7.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </bottom>
+</BorderPane>
